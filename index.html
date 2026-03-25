@@ -619,6 +619,8 @@ function handleSubmit(e) {
   })
   .then(res => {
     if (res.ok) {
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: 'waitlist_signup' });
       showSuccess(form, success);
     } else {
       btn.disabled = false;
