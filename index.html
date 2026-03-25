@@ -576,29 +576,43 @@ function handleSubmit(e) {
   e.preventDefault();
   const form = document.getElementById('waitlist-form');
   const success = document.getElementById('success-msg');
+  const btn = form.querySelector('.btn-submit');
 
-  // ── REPLACE THIS WITH YOUR FORM ENDPOINT ──────────────────
-  // fetch('https://formspree.io/f/YOUR_FORM_ID', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-  //   body: JSON.stringify(Object.fromEntries(new FormData(form)))
-  // }).then(() => showSuccess(form, success));
-  // ──────────────────────────────────────────────────────────
+  btn.disabled = true;
+  btn.textContent = '⏳ Sending…';
 
-  // Log for testing:
   const data = Object.fromEntries(new FormData(form));
   const apps = [...form.querySelectorAll('input[name="apps"]:checked')].map(c => c.value);
-  console.log('Waitlist signup:', { ...data, apps, lang: currentLang });
 
-  showSuccess(form, success);
+  fetch('https://formspree.io/f/mojparjb', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+    body: JSON.stringify({ ...data, apps, lang: currentLang })
+  })
+  .then(res => {
+    if (res.ok) {
+      showSuccess(form, success);
+    } else {
+      btn.disabled = false;
+      btn.textContent = translations[currentLang].btn_submit;
+      alert('Something went wrong — please try again.');
+    }
+  })
+  .catch(() => {
+    btn.disabled = false;
+    btn.textContent = translations[currentLang].btn_submit;
+    alert('Something went wrong — please try again.');
+  });
 }
 
 function handleCTASubmit(e) {
   e.preventDefault();
+  const email = e.target.querySelector('input[type="email"]').value;
   document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
-  const form = document.getElementById('waitlist-form');
-  const success = document.getElementById('success-msg');
-  showSuccess(form, success);
+  setTimeout(() => {
+    const mainEmail = document.getElementById('email');
+    if (mainEmail) mainEmail.value = email;
+  }, 600);
 }
 
 function showSuccess(form, success) {
