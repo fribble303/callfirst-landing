@@ -9,6 +9,24 @@
   <meta property="og:description" content="The only way to open TikTok is to call your mum." />
   <meta property="og:type" content="website" />
 
+  <!-- Cookie consent (iubenda) — must load before analytics -->
+  <script type="text/javascript">
+    var _iub = _iub || [];
+    _iub.csConfiguration = {"siteId":4474006,"cookiePolicyId":37188892,"lang":"auto","storage":{"useSiteId":true}};
+  </script>
+  <script type="text/javascript" src="https://cs.iubenda.com/autoblocking/4474006.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/gpp/stub.js"></script>
+  <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVXCNHBJ8R"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-KVXCNHBJ8R');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -551,6 +569,13 @@ function setLang(lang) {
 
 // ─── AUTO-DETECT LANGUAGE ON LOAD ───────────────────────────
 (function detectLanguage() {
+  // Check URL parameter first (?lang=pt or ?lang=en)
+  const urlLang = new URLSearchParams(window.location.search).get('lang');
+  if (urlLang === 'pt' || urlLang === 'en') {
+    setLang(urlLang);
+    return;
+  }
+
   // Check stored preference first
   let preferred;
   try { preferred = localStorage.getItem('callfirst_lang'); } catch(e) {}
