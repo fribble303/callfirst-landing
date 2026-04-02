@@ -47,8 +47,6 @@
       background: var(--warm); color: var(--text);
       -webkit-font-smoothing: antialiased; overflow-x: hidden;
     }
-
-    /* ─── NAV ─── */
     nav {
       position: sticky; top: 0; z-index: 50;
       background: rgba(254,249,240,0.92);
@@ -61,43 +59,19 @@
     .nav-logo { font-weight: 800; font-size: 18px; letter-spacing: -0.5px; color: var(--text); display: flex; align-items: center; gap: 8px; }
     .nav-logo .dot { color: var(--green); }
     .nav-right { display: flex; align-items: center; gap: 12px; }
-    .lang-toggle {
-      display: flex; align-items: center; gap: 2px;
-      background: #f3f4f6; border-radius: 99px; padding: 3px;
-    }
-    .lang-btn {
-      font-size: 12px; font-weight: 700; letter-spacing: 0.3px;
-      padding: 4px 10px; border-radius: 99px; border: none;
-      background: transparent; cursor: pointer; color: var(--muted);
-      transition: all 0.15s; font-family: inherit;
-    }
+    .lang-toggle { display: flex; align-items: center; gap: 2px; background: #f3f4f6; border-radius: 99px; padding: 3px; }
+    .lang-btn { font-size: 12px; font-weight: 700; letter-spacing: 0.3px; padding: 4px 10px; border-radius: 99px; border: none; background: transparent; cursor: pointer; color: var(--muted); transition: all 0.15s; font-family: inherit; }
     .lang-btn.active { background: white; color: var(--text); box-shadow: 0 1px 4px rgba(0,0,0,0.1); }
-    .nav-cta {
-      background: var(--green); color: white;
-      font-weight: 600; font-size: 14px;
-      border: none; border-radius: 99px;
-      padding: 8px 20px; cursor: pointer;
-      text-decoration: none;
-      transition: background 0.15s, transform 0.1s;
-    }
+    .nav-cta { background: var(--green); color: white; font-weight: 600; font-size: 14px; border: none; border-radius: 99px; padding: 8px 20px; cursor: pointer; text-decoration: none; transition: background 0.15s, transform 0.1s; }
     .nav-cta:hover { background: var(--green-dk); transform: translateY(-1px); }
-
-    /* ─── HERO ─── */
     .hero { padding: 72px 24px 56px; max-width: 680px; margin: 0 auto; text-align: center; }
-    .badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      background: #dcfce7; color: #15803d;
-      font-size: 13px; font-weight: 600;
-      border-radius: 99px; padding: 5px 14px; margin-bottom: 28px;
-    }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: #dcfce7; color: #15803d; font-size: 13px; font-weight: 600; border-radius: 99px; padding: 5px 14px; margin-bottom: 28px; }
     .badge .pulse { width: 8px; height: 8px; border-radius: 50%; background: var(--green); animation: pulse 2s infinite; }
     @keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:.6;transform:scale(1.3)} }
     h1 { font-size: clamp(36px,8vw,60px); font-weight: 900; line-height: 1.08; letter-spacing: -2px; color: var(--text); margin-bottom: 20px; }
     h1 .highlight { color: var(--green); }
     .sub { font-size: clamp(17px,3vw,20px); color: var(--muted); line-height: 1.55; max-width: 520px; margin: 0 auto 36px; }
     .sub strong { color: var(--text); }
-
-    /* ─── PHONE MOCKUP ─── */
     .phone-wrap { position: relative; display: flex; justify-content: center; margin: 0 auto 56px; max-width: 280px; }
     .phone { width: 240px; background: #111; border-radius: 40px; padding: 16px; box-shadow: 0 32px 80px rgba(0,0,0,0.22), 0 0 0 6px #222; }
     .phone-screen { background: #000; border-radius: 28px; overflow: hidden; aspect-ratio: 9/16; position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; }
@@ -116,8 +90,6 @@
     .call-btn { margin-top: 4px; background: var(--green); color: white; border: none; border-radius: 99px; font-size: 15px; font-weight: 700; padding: 12px 28px; display: flex; align-items: center; gap: 8px; cursor: pointer; animation: float 3s ease-in-out infinite; }
     @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-4px)} }
     .lock-sub { font-size: 11px; color: rgba(255,255,255,0.35); text-align: center; }
-
-    /* ─── SIGNUP CARD ─── */
     .signup-section { padding: 0 24px 72px; max-width: 540px; margin: 0 auto; }
     .signup-card { background: white; border-radius: var(--radius); padding: 36px 32px; box-shadow: 0 4px 24px rgba(0,0,0,0.07), 0 0 0 1px rgba(0,0,0,0.04); }
     .signup-card h2 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 6px; }
@@ -134,8 +106,6 @@
     .success-message .big-emoji { font-size: 52px; line-height: 1; }
     .success-message h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
     .success-message p { font-size: 15px; color: var(--muted); line-height: 1.55; }
-
-    /* ─── HOW IT WORKS ─── */
     .how-section { padding: 0 24px 72px; max-width: 680px; margin: 0 auto; }
     .section-label { font-size: 12px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; color: var(--green); margin-bottom: 12px; }
     .how-section h2 { font-size: clamp(26px,5vw,36px); font-weight: 800; letter-spacing: -1px; margin-bottom: 36px; }
@@ -146,8 +116,6 @@
     .step-num { flex-shrink: 0; width: 48px; height: 48px; border-radius: 50%; background: var(--green); color: white; font-weight: 800; font-size: 18px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(34,197,94,0.3); position: relative; z-index: 1; }
     .step-content h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; padding-top: 10px; }
     .step-content p { font-size: 15px; color: var(--muted); line-height: 1.5; }
-
-    /* ─── COMPARE ─── */
     .compare-section { padding: 72px 24px; max-width: 680px; margin: 0 auto; }
     .compare-section h2 { font-size: clamp(26px,5vw,36px); font-weight: 800; letter-spacing: -1px; margin-bottom: 36px; }
     .compare-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
@@ -156,12 +124,10 @@
     .compare-card.us { background: #f0fdf4; border-color: var(--green); }
     .compare-card .card-label { font-size: 11px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; margin-bottom: 12px; }
     .compare-card.them .card-label { color: var(--muted); }
-    .compare-card.us  .card-label { color: var(--green-dk); }
+    .compare-card.us .card-label { color: var(--green-dk); }
     .compare-list { list-style: none; display: flex; flex-direction: column; gap: 6px; }
     .compare-list li { font-size: 14px; color: var(--muted); display: flex; align-items: flex-start; gap: 8px; line-height: 1.4; }
     .compare-list li .icon { flex-shrink: 0; margin-top: 1px; }
-
-    /* ─── CTA SECTION ─── */
     .cta-section { background: var(--text); padding: 72px 24px; text-align: center; }
     .cta-section h2 { font-size: clamp(28px,6vw,44px); font-weight: 900; letter-spacing: -1.5px; color: white; margin-bottom: 12px; }
     .cta-section .highlight { color: var(--green); }
@@ -172,12 +138,8 @@
     .mini-form input[type="email"]:focus { border-color: var(--green); background: rgba(255,255,255,0.12); box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
     .mini-form .btn-submit { width: auto; white-space: nowrap; padding: 14px 24px; margin: 0; }
     .cta-section .form-footer { color: rgba(255,255,255,0.3); margin-top: 14px; }
-
-    /* ─── FOOTER ─── */
     footer { padding: 28px 24px; text-align: center; border-top: 1px solid var(--border); font-size: 13px; color: var(--muted); }
     footer a { color: var(--muted); text-decoration: underline; }
-
-    /* ─── RESPONSIVE ─── */
     @media (max-width: 480px) {
       .signup-card { padding: 28px 20px; }
       .compare-grid { grid-template-columns: 1fr; }
@@ -189,12 +151,7 @@
 
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWD2ZX2S"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<!-- ─── NAV ─── -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWD2ZX2S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <nav>
   <div class="nav-logo">Call<span class="dot">Mum</span>First</div>
@@ -207,18 +164,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </nav>
 
-<!-- ─── HERO ─── -->
-
 <section class="hero">
   <div class="badge">
     <span class="pulse"></span>
     <span data-i18n="badge">Launching June 2026 · iOS &amp; Android</span>
   </div>
   <h1 data-i18n="h1">The only way to open<br><span class="highlight">TikTok</span><br>is to call your mum.</h1>
-  <p class="sub" data-i18n="sub">CallFirst blocks social media until you've had a <strong>real phone call</strong> with someone you love. Not a timer. Not a passcode. A conversation.</p>
+  <p class="sub" data-i18n="sub">CallFirst blocks social media until you've had a <strong>real phone call</strong> with someone you love. Not a timer. Not a passcode. A conversation.<br><span style="font-size:0.85em;color:#9ca3af;display:block;margin-top:10px">Works on Instagram, TikTok, Facebook, YouTube, Snapchat and more.</span></p>
 </section>
-
-<!-- ─── PHONE MOCKUP ─── -->
 
 <div class="phone-wrap">
   <div class="phone">
@@ -244,40 +197,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </div>
 
-<!-- ─── SIGNUP CARD ─── -->
-
 <section class="signup-section" id="signup">
   <div class="signup-card">
     <h2 data-i18n="form_title">Get early access 🎉</h2>
     <p data-i18n="form_desc">We're launching June 2026. Join the waitlist and we'll let you know the moment it's live.</p>
-
-```
-<form id="waitlist-form" action="https://formspree.io/f/mojparjb" method="POST" onsubmit="handleSubmit(event)">
-
-  <div class="form-group">
-    <label for="email" data-i18n="label_email">Email address</label>
-    <input type="email" id="email" name="email" data-i18n-placeholder="placeholder_email" placeholder="you@example.com" required autocomplete="email" />
-  </div>
-
-  <input type="hidden" name="lang" id="hidden-lang" value="en" />
-  <input type="hidden" name="utm_source" id="hidden-utm-source" value="" />
-  <input type="hidden" name="utm_campaign" id="hidden-utm-campaign" value="" />
-
-  <button type="submit" class="btn-submit" data-i18n="btn_submit">Join the waitlist →</button>
-  <p class="form-footer" data-i18n="form_footer">No spam, ever. We'll email you once when the app is ready. That's it.</p>
-</form>
-
-<div class="success-message" id="success-msg">
-  <div class="big-emoji">📞</div>
-  <h3 data-i18n="success_title">You're on the list!</h3>
-  <p data-i18n="success_body">We'll be in touch the moment CallFirst launches. In the meantime — maybe give your mum a call? 😄</p>
-</div>
-```
-
+    <form id="waitlist-form" action="https://formspree.io/f/mojparjb" method="POST" onsubmit="handleSubmit(event)">
+      <div class="form-group">
+        <label for="email" data-i18n="label_email">Email address</label>
+        <input type="email" id="email" name="email" data-i18n-placeholder="placeholder_email" placeholder="you@example.com" required autocomplete="email" />
+      </div>
+      <input type="hidden" name="lang" id="hidden-lang" value="en" />
+      <input type="hidden" name="utm_source" id="hidden-utm-source" value="" />
+      <input type="hidden" name="utm_campaign" id="hidden-utm-campaign" value="" />
+      <button type="submit" class="btn-submit" data-i18n="btn_submit">Join the waitlist →</button>
+      <p class="form-footer" data-i18n="form_footer">No spam, ever. We'll email you once when the app is ready. That's it.</p>
+    </form>
+    <div class="success-message" id="success-msg">
+      <div class="big-emoji">📞</div>
+      <h3 data-i18n="success_title">You're on the list!</h3>
+      <p data-i18n="success_body">We'll be in touch the moment CallFirst launches. In the meantime — maybe give your mum a call? 😄</p>
+    </div>
   </div>
 </section>
-
-<!-- ─── HOW IT WORKS ─── -->
 
 <section class="how-section">
   <div class="section-label" data-i18n="how_label">How it works</div>
@@ -314,8 +255,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ─── WHY DIFFERENT ─── -->
-
 <section class="compare-section">
   <div class="section-label" data-i18n="compare_label">Why different</div>
   <h2 data-i18n="compare_title">Willpower apps don't work.<br>This one does.</h2>
@@ -343,8 +282,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<!-- ─── FINAL CTA ─── -->
-
 <section class="cta-section">
   <h2 data-i18n="cta_title">Ready to <span class="highlight">call your mum</span>?</h2>
   <p data-i18n="cta_desc">CallFirst launches June 2026. Join the waitlist — we'll let you know the moment it's live.</p>
@@ -355,18 +292,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p class="form-footer" data-i18n="cta_footer">Free to join. No spam. Launches 1st June 2026 on iOS &amp; Android.</p>
 </section>
 
-<!-- ─── FOOTER ─── -->
-
 <footer>
   <p data-i18n="footer_text">© 2026 CallFirst · <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> · Made with love (and guilt) in London</p>
 </footer>
 
-<!-- ─── SCRIPTS ─── -->
-
 <script>
-// ═══════════════════════════════════════════════════════════════
-// TRANSLATIONS
-// ═══════════════════════════════════════════════════════════════
 const translations = {
   en: {
     nav_cta:        'Get early access',
@@ -413,7 +343,6 @@ const translations = {
     cta_footer:     'Free to join. No spam. Launches 1st June 2026 on iOS &amp; Android.',
     footer_text:    '© 2026 CallFirst · <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> · Made with love (and guilt) in London',
   },
-
   pt: {
     nav_cta:        'Acesso antecipado',
     badge:          'Lançamento em Junho 2026 · iOS e Android',
@@ -461,90 +390,52 @@ const translations = {
   }
 };
 
-// ═══════════════════════════════════════════════════════════════
-// LANGUAGE ENGINE
-// ═══════════════════════════════════════════════════════════════
 let currentLang = 'en';
 
 function setLang(lang) {
   currentLang = lang;
   const t = translations[lang];
-
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
-
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
     const key = el.getAttribute('data-i18n-placeholder');
     if (t[key] !== undefined) el.setAttribute('placeholder', t[key]);
   });
-
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
-
   if (lang === 'pt') {
     document.title = 'Call Mum First — Desbloqueie seus apps. Ligue pra quem você ama.';
-    document.querySelector('meta[name="description"]').content =
-      'A única forma de abrir o TikTok é ligar pra sua mãe. O CallFirst bloqueia as redes sociais até você ter uma ligação de verdade com quem importa.';
+    document.querySelector('meta[name="description"]').content = 'A única forma de abrir o TikTok é ligar pra sua mãe. O CallFirst bloqueia as redes sociais até você ter uma ligação de verdade com quem importa.';
   } else {
     document.title = 'Call Mum First — Unlock your apps. Call someone you love.';
-    document.querySelector('meta[name="description"]').content =
-      'The only way to open TikTok is to call your mum. CallFirst blocks social media until you\'ve had a real phone call with someone who matters.';
+    document.querySelector('meta[name="description"]').content = 'The only way to open TikTok is to call your mum. CallFirst blocks social media until you\'ve had a real phone call with someone who matters.';
   }
-
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
-
-  // Keep hidden lang field in sync so Formspree captures it
   const hiddenLang = document.getElementById('hidden-lang');
   if (hiddenLang) hiddenLang.value = lang;
-
-  // Persist choice (but only after user manually picks — not during auto-detect)
   try { localStorage.setItem('callfirst_lang', lang); } catch(e) {}
 }
 
-// ─── AUTO-DETECT LANGUAGE ON LOAD ─────────────────────────────
-// Priority order:
-// 1. ?lang= URL parameter (use this in your Brazilian Meta ads)
-// 2. Browser/device language (pt-BR phones auto-switch)
-// 3. Stored preference (only after user has manually chosen)
-// 4. Default: English
 (function detectLanguage() {
-  // 1. URL parameter — most reliable, add ?lang=pt to your ad destination URLs
   const urlParams = new URLSearchParams(window.location.search);
   const urlLang = urlParams.get('lang');
   if (urlLang === 'pt' || urlLang === 'en') {
     setLang(urlLang);
-    // Also capture UTM params for Formspree
     try {
       document.getElementById('hidden-utm-source').value = urlParams.get('utm_source') || '';
       document.getElementById('hidden-utm-campaign').value = urlParams.get('utm_campaign') || '';
     } catch(e) {}
     return;
   }
-
-  // 2. Browser/device language — catches pt-BR phones even without URL param
   const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
   const isPT = browserLangs.some(l => l.toLowerCase().startsWith('pt'));
-  if (isPT) {
-    setLang('pt');
-    return;
-  }
-
-  // 3. Stored preference — only applied if no URL param and no PT browser language
-  // (Moved AFTER browser detection so a pt-BR phone always sees Portuguese,
-  //  even if they once manually switched to EN on a previous visit)
+  if (isPT) { setLang('pt'); return; }
   let stored;
   try { stored = localStorage.getItem('callfirst_lang'); } catch(e) {}
-  if (stored === 'pt' || stored === 'en') {
-    setLang(stored);
-    return;
-  }
-
-  // 4. Default: English
+  if (stored === 'pt' || stored === 'en') { setLang(stored); return; }
   setLang('en');
-
-  // Capture UTM params regardless of language
   try {
     const p = new URLSearchParams(window.location.search);
     document.getElementById('hidden-utm-source').value = p.get('utm_source') || '';
@@ -552,18 +443,14 @@ function setLang(lang) {
   } catch(e) {}
 })();
 
-// ─── FORM HANDLERS ────────────────────────────────────────────
 function handleSubmit(e) {
   e.preventDefault();
   const form = document.getElementById('waitlist-form');
   const success = document.getElementById('success-msg');
   const btn = form.querySelector('.btn-submit');
-
   btn.disabled = true;
   btn.textContent = currentLang === 'pt' ? '⏳ Enviando…' : '⏳ Sending…';
-
   const data = Object.fromEntries(new FormData(form));
-
   fetch('https://formspree.io/f/mojparjb', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -603,7 +490,6 @@ function showSuccess(form, success) {
   success.scrollIntoView({ behavior: 'smooth', block: 'center' });
 }
 
-// Smooth scroll for anchor links
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
