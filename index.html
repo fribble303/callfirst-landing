@@ -1,15 +1,9 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
   <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-NWD2ZX2S');</script>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NWD2ZX2S');</script>
   <!-- End Google Tag Manager -->
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Call Mum First — Unlock your apps. Call someone you love.</title>
@@ -17,45 +11,27 @@
   <meta property="og:title" content="Call Mum First" />
   <meta property="og:description" content="The only way to open TikTok is to call your mum." />
   <meta property="og:type" content="website" />
-
-  <!-- Google tag (gtag.js) -->
-
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-KVXCNHBJ8R"></script>
-
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-KVXCNHBJ8R');
   </script>
-
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --green: #22c55e; --green-dk: #16a34a;
       --warm: #fef9f0; --text: #1a1a1a; --muted: #6b7280;
-      --border: #e5e7eb; --white: #ffffff; --red: #ef4444;
+      --border: #e5e7eb; --white: #ffffff;
       --radius: 16px;
     }
     html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: var(--warm); color: var(--text);
-      -webkit-font-smoothing: antialiased; overflow-x: hidden;
-    }
-    nav {
-      position: sticky; top: 0; z-index: 50;
-      background: rgba(254,249,240,0.92);
-      backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid var(--border);
-      padding: 0 24px;
-      display: flex; align-items: center; justify-content: space-between;
-      height: 56px;
-    }
+    body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: var(--warm); color: var(--text); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    nav { position: sticky; top: 0; z-index: 50; background: rgba(254,249,240,0.92); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 56px; }
     .nav-logo { font-weight: 800; font-size: 18px; letter-spacing: -0.5px; color: var(--text); display: flex; align-items: center; gap: 8px; }
     .nav-logo .dot { color: var(--green); }
     .nav-right { display: flex; align-items: center; gap: 12px; }
@@ -81,7 +57,9 @@
     .app-icon.tiktok { background: linear-gradient(135deg,#010101,#69c9d0); }
     .app-icon.ig { background: linear-gradient(135deg,#833ab4,#fd1d1d,#fcb045); }
     .app-icon.x { background: #000; border: 1px solid #333; }
-    .app-icon.fb { background: #1877f2; } .app-icon.yt { background: #ff0000; } .app-icon.snap { background: #fffc00; }
+    .app-icon.fb { background: #1877f2; }
+    .app-icon.yt { background: #ff0000; }
+    .app-icon.snap { background: #fffc00; }
     .lock-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.82); backdrop-filter: blur(8px); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; gap: 14px; }
     .lock-icon { font-size: 40px; line-height: 1; }
     .lock-app-name { font-size: 13px; font-weight: 600; color: rgba(255,255,255,0.5); letter-spacing: 0.8px; text-transform: uppercase; }
@@ -96,12 +74,15 @@
     .signup-card p { font-size: 15px; color: var(--muted); margin-bottom: 24px; line-height: 1.5; }
     .form-group { margin-bottom: 16px; }
     label { display: block; font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
-    input[type="email"] { width: 100%; padding: 13px 16px; font-size: 16px; font-family: inherit; border: 1.5px solid var(--border); border-radius: 10px; background: #fafafa; color: var(--text); transition: border-color 0.15s, box-shadow 0.15s; outline: none; -webkit-appearance: none; }
-    input[type="email"]:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(34,197,94,0.15); background: white; }
+    input[type="email"],
+    input[type="tel"] { width: 100%; padding: 18px 16px; font-size: 17px; font-family: inherit; border: 1.5px solid var(--border); border-radius: 10px; background: #fafafa; color: var(--text); transition: border-color 0.15s, box-shadow 0.15s; outline: none; -webkit-appearance: none; }
+    input[type="email"]:focus,
+    input[type="tel"]:focus { border-color: var(--green); box-shadow: 0 0 0 3px rgba(34,197,94,0.15); background: white; }
     .btn-submit { width: 100%; background: var(--green); color: white; font-size: 16px; font-weight: 700; border: none; border-radius: 10px; padding: 15px; cursor: pointer; margin-top: 8px; transition: background 0.15s, transform 0.1s, box-shadow 0.15s; font-family: inherit; }
     .btn-submit:hover { background: var(--green-dk); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(34,197,94,0.3); }
     .btn-submit:active { transform: translateY(0); }
     .form-footer { font-size: 12px; color: var(--muted); text-align: center; margin-top: 12px; line-height: 1.5; }
+    .form-footer a { color: var(--muted); }
     .success-message { display: none; flex-direction: column; align-items: center; text-align: center; gap: 12px; padding: 8px 0; }
     .success-message .big-emoji { font-size: 52px; line-height: 1; }
     .success-message h3 { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
@@ -133,7 +114,7 @@
     .cta-section .highlight { color: var(--green); }
     .cta-section p { font-size: 17px; color: rgba(255,255,255,0.55); margin-bottom: 32px; max-width: 420px; margin-left: auto; margin-right: auto; line-height: 1.55; }
     .mini-form { display: flex; gap: 10px; max-width: 380px; margin: 0 auto 12px; }
-    .mini-form input[type="email"] { flex: 1; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white; padding: 14px 16px; }
+    .mini-form input[type="email"] { flex: 1; background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.2); color: white; padding: 14px 16px; font-size: 16px; }
     .mini-form input[type="email"]::placeholder { color: rgba(255,255,255,0.35); }
     .mini-form input[type="email"]:focus { border-color: var(--green); background: rgba(255,255,255,0.12); box-shadow: 0 0 0 3px rgba(34,197,94,0.2); }
     .mini-form .btn-submit { width: auto; white-space: nowrap; padding: 14px 24px; margin: 0; }
@@ -148,7 +129,6 @@
       .nav-right { gap: 8px; }
     }
   </style>
-
 </head>
 <body>
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWD2ZX2S" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -157,8 +137,8 @@
   <div class="nav-logo">Call<span class="dot">Mum</span>First</div>
   <div class="nav-right">
     <div class="lang-toggle">
-      <button class="lang-btn active" id="btn-en" onclick="setLang('en')">EN</button>
-      <button class="lang-btn" id="btn-pt" onclick="setLang('pt')">PT</button>
+      <button class="lang-btn active" id="btn-en">EN</button>
+      <button class="lang-btn" id="btn-pt">PT</button>
     </div>
     <a href="#signup" class="nav-cta" data-i18n="nav_cta">Get early access</a>
   </div>
@@ -188,9 +168,7 @@
         <div class="lock-icon">🔒</div>
         <div class="lock-app-name">TikTok</div>
         <div class="lock-message" data-i18n="lock_msg">Call <span class="mum">Mum</span><br>to unlock</div>
-        <button class="call-btn">
-          <span>📞</span> <span data-i18n="lock_btn">Call Mum</span>
-        </button>
+        <button class="call-btn"><span>📞</span> <span data-i18n="lock_btn">Call Mum</span></button>
         <div class="lock-sub" data-i18n="lock_sub">60 seconds unlocks for 1 hour</div>
       </div>
     </div>
@@ -204,13 +182,17 @@
     <form id="waitlist-form" action="https://formspree.io/f/mojparjb" method="POST" onsubmit="handleSubmit(event)">
       <div class="form-group">
         <label for="email" data-i18n="label_email">Email address</label>
-        <input type="email" id="email" name="email" data-i18n-placeholder="placeholder_email" placeholder="you@example.com" required autocomplete="email" />
+        <input type="email" id="email" name="email" placeholder="you@example.com" data-i18n-placeholder="placeholder_email" required autocomplete="email" />
+      </div>
+      <div class="form-group">
+        <label for="whatsapp" data-i18n="label_whatsapp">WhatsApp <span style="font-weight:400;color:var(--muted)">(optional)</span></label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="+55 11 99999-9999" data-i18n-placeholder="placeholder_whatsapp" autocomplete="tel" />
       </div>
       <input type="hidden" name="lang" id="hidden-lang" value="en" />
       <input type="hidden" name="utm_source" id="hidden-utm-source" value="" />
       <input type="hidden" name="utm_campaign" id="hidden-utm-campaign" value="" />
       <button type="submit" class="btn-submit" data-i18n="btn_submit">Join the waitlist →</button>
-      <p class="form-footer" data-i18n="form_footer">No spam, ever. We'll email you once when the app is ready. That's it.</p>
+      <p class="form-footer" data-i18n="form_footer">No spam. We'll be in touch when the app is ready. <a href="/privacy.html">Privacy policy</a>.</p>
     </form>
     <div class="success-message" id="success-msg">
       <div class="big-emoji">📞</div>
@@ -286,7 +268,7 @@
   <h2 data-i18n="cta_title">Ready to <span class="highlight">call your mum</span>?</h2>
   <p data-i18n="cta_desc">CallFirst launches June 2026. Join the waitlist — we'll let you know the moment it's live.</p>
   <form id="cta-form" class="mini-form" action="https://formspree.io/f/mojparjb" method="POST" onsubmit="handleCTASubmit(event)">
-    <input type="email" name="email" data-i18n-placeholder="placeholder_email" placeholder="your@email.com" required autocomplete="email" />
+    <input type="email" name="email" placeholder="your@email.com" data-i18n-placeholder="placeholder_email" required autocomplete="email" />
     <button type="submit" class="btn-submit" data-i18n="btn_cta">Join waitlist</button>
   </form>
   <p class="form-footer" data-i18n="cta_footer">Free to join. No spam. Launches 1st June 2026 on iOS &amp; Android.</p>
@@ -297,35 +279,37 @@
 </footer>
 
 <script>
-const translations = {
+var translations = {
   en: {
-    nav_cta:        'Get early access',
-    badge:          'Launching June 2026 · iOS &amp; Android',
-    h1:             'The only way to open<br><span class="highlight">TikTok</span><br>is to call your mum.',
-    sub:            'CallFirst blocks social media until you\'ve had a <strong>real phone call</strong> with someone you love. Not a timer. Not a passcode. A conversation.<br><span style="font-size:0.85em;color:#9ca3af;display:block;margin-top:10px">Works on Instagram, TikTok, Facebook, YouTube, Snapchat and more.</span>',
-    lock_msg:       'Call <span class="mum">Mum</span><br>to unlock',
-    lock_btn:       'Call Mum',
-    lock_sub:       '60 seconds unlocks for 1 hour',
-    form_title:     'Get early access 🎉',
-    form_desc:      'We\'re launching June 2026. Join the waitlist and we\'ll let you know the moment it\'s live.',
-    label_email:    'Email address',
+    nav_cta: 'Get early access',
+    badge: 'Launching June 2026 &middot; iOS &amp; Android',
+    h1: 'The only way to open<br><span class="highlight">TikTok</span><br>is to call your mum.',
+    sub: 'CallFirst blocks social media until you\'ve had a <strong>real phone call</strong> with someone you love. Not a timer. Not a passcode. A conversation.<br><span style="font-size:0.85em;color:#9ca3af;display:block;margin-top:10px">Works on Instagram, TikTok, Facebook, YouTube, Snapchat and more.</span>',
+    lock_msg: 'Call <span class="mum">Mum</span><br>to unlock',
+    lock_btn: 'Call Mum',
+    lock_sub: '60 seconds unlocks for 1 hour',
+    form_title: 'Get early access \uD83C\uDF89',
+    form_desc: 'We\'re launching June 2026. Join the waitlist and we\'ll let you know the moment it\'s live.',
+    label_email: 'Email address',
     placeholder_email: 'you@example.com',
-    btn_submit:     'Join the waitlist →',
-    form_footer:    'No spam, ever. We\'ll email you once when the app is ready. That\'s it.',
-    success_title:  'You\'re on the list!',
-    success_body:   'We\'ll be in touch the moment CallFirst launches. In the meantime — maybe give your mum a call? 😄',
-    how_label:      'How it works',
-    how_title:      'Simple, powerful, impossible to cheat.',
-    step1_h:        'You tap TikTok (or Instagram, or X…)',
-    step1_p:        'Your usual habit kicks in. You reach for your phone.',
-    step2_h:        'CallFirst intercepts the launch',
-    step2_p:        'Instead of the app, you see a lock screen: <em>"Call Mum to unlock."</em> No passcode bypass. No timer to wait out. The only key is a real conversation.',
-    step3_h:        'You call. You talk. 60 seconds minimum.',
-    step3_p:        'CallFirst uses your phone\'s native call system to verify the call happened and lasted at least a minute. No recording. No listening. Just a check that you actually spoke.',
-    step4_h:        'Your apps unlock. You scroll guilt-free.',
-    step4_p:        'Apps unlock for 30, 60, or 120 minutes — you choose. When the window closes, the lock reinstates. And somewhere, a mum is smiling.',
-    compare_label:  'Why different',
-    compare_title:  'Willpower apps don\'t work.<br>This one does.',
+    label_whatsapp: 'WhatsApp <span style="font-weight:400;color:var(--muted)">(optional)</span>',
+    placeholder_whatsapp: '+55 11 99999-9999',
+    btn_submit: 'Join the waitlist \u2192',
+    form_footer: 'No spam. We\'ll be in touch when the app is ready. <a href="/privacy.html" style="color:var(--muted)">Privacy policy</a>.',
+    success_title: 'You\'re on the list!',
+    success_body: 'We\'ll be in touch the moment CallFirst launches. In the meantime \u2014 maybe give your mum a call? \uD83D\uDE04',
+    how_label: 'How it works',
+    how_title: 'Simple, powerful, impossible to cheat.',
+    step1_h: 'You tap TikTok (or Instagram, or X\u2026)',
+    step1_p: 'Your usual habit kicks in. You reach for your phone.',
+    step2_h: 'CallFirst intercepts the launch',
+    step2_p: 'Instead of the app, you see a lock screen: <em>"Call Mum to unlock."</em> No passcode bypass. No timer to wait out. The only key is a real conversation.',
+    step3_h: 'You call. You talk. 60 seconds minimum.',
+    step3_p: 'CallFirst uses your phone\'s native call system to verify the call happened and lasted at least a minute. No recording. No listening. Just a check that you actually spoke.',
+    step4_h: 'Your apps unlock. You scroll guilt-free.',
+    step4_p: 'Apps unlock for 30, 60, or 120 minutes \u2014 you choose. When the window closes, the lock reinstates. And somewhere, a mum is smiling.',
+    compare_label: 'Why different',
+    compare_title: 'Willpower apps don\'t work.<br>This one does.',
     compare_them_label: 'Every other app blocker',
     them1: 'Set a timer. Override it in 3 seconds.',
     them2: 'Enter a passcode. You set the passcode.',
@@ -337,167 +321,161 @@ const translations = {
     us3: 'No bypass. No passcode. No cheating.',
     us4: 'Tracks your calling streaks, not your failures.',
     us5: 'Somebody, somewhere, gets called more.',
-    cta_title:      'Ready to <span class="highlight">call your mum</span>?',
-    cta_desc:       'CallFirst launches June 2026. Join the waitlist — we\'ll let you know the moment it\'s live.',
-    btn_cta:        'Join waitlist',
-    cta_footer:     'Free to join. No spam. Launches 1st June 2026 on iOS &amp; Android.',
-    footer_text:    '© 2026 CallFirst · <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> · Made with love (and guilt) in London',
+    cta_title: 'Ready to <span class="highlight">call your mum</span>?',
+    cta_desc: 'CallFirst launches June 2026. Join the waitlist \u2014 we\'ll let you know the moment it\'s live.',
+    btn_cta: 'Join waitlist',
+    cta_footer: 'Free to join. No spam. Launches 1st June 2026 on iOS &amp; Android.',
+    footer_text: '\u00A9 2026 CallFirst &middot; <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> &middot; Made with love (and guilt) in London'
   },
   pt: {
-    nav_cta:        'Acesso antecipado',
-    badge:          'Lançamento em Junho 2026 · iOS e Android',
-    h1:             'A única forma de abrir<br>o <span class="highlight">TikTok</span><br>é ligar pra sua mãe.',
-    sub:            'O CallFirst bloqueia as redes sociais até você fazer uma <strong>ligação de verdade</strong> pra alguém que você ama. Não é timer. Não é senha. É conversa.<br><span style="font-size:0.85em;color:#9ca3af;display:block;margin-top:10px">Funciona no Instagram, TikTok, Facebook, YouTube, Snapchat e muito mais.</span>',
-    lock_msg:       'Ligue pra <span class="mum">Mãe</span><br>pra desbloquear',
-    lock_btn:       'Ligar pra Mãe',
-    lock_sub:       '60 segundos libera por 1 hora',
-    form_title:     'Acesso antecipado 🎉',
-    form_desc:      'Lançamos em Junho de 2026. Entre na lista de espera e te avisamos assim que estiver disponível.',
-    label_email:    'Endereço de e-mail',
+    nav_cta: 'Acesso antecipado',
+    badge: 'Lan\u00E7amento em Junho 2026 &middot; iOS e Android',
+    h1: 'A \u00FAnica forma de abrir<br>o <span class="highlight">TikTok</span><br>\u00E9 ligar pra sua m\u00E3e.',
+    sub: 'O CallFirst bloqueia as redes sociais at\u00E9 voc\u00EA fazer uma <strong>liga\u00E7\u00E3o de verdade</strong> pra algu\u00E9m que voc\u00EA ama. N\u00E3o \u00E9 timer. N\u00E3o \u00E9 senha. \u00C9 conversa.<br><span style="font-size:0.85em;color:#9ca3af;display:block;margin-top:10px">Funciona no Instagram, TikTok, Facebook, YouTube, Snapchat e muito mais.</span>',
+    lock_msg: 'Ligue pra <span class="mum">M\u00E3e</span><br>pra desbloquear',
+    lock_btn: 'Ligar pra M\u00E3e',
+    lock_sub: '60 segundos libera por 1 hora',
+    form_title: 'Acesso antecipado \uD83C\uDF89',
+    form_desc: 'Lan\u00E7amos em Junho de 2026. Entre na lista de espera e te avisamos assim que estiver dispon\u00EDvel.',
+    label_email: 'Endere\u00E7o de e-mail',
     placeholder_email: 'voce@email.com',
-    btn_submit:     'Entrar na lista →',
-    form_footer:    'Sem spam. Vamos te mandar um e-mail quando o app estiver pronto. Só isso.',
-    success_title:  'Você está na lista!',
-    success_body:   'Te avisamos assim que o CallFirst lançar. Enquanto isso — que tal ligar pra sua mãe? 😄',
-    how_label:      'Como funciona',
-    how_title:      'Simples, poderoso e impossível de burlar.',
-    step1_h:        'Você abre o TikTok (ou o Instagram, ou o X…)',
-    step1_p:        'O hábito de sempre bate. Você pega o celular.',
-    step2_h:        'O CallFirst intercepta a abertura',
-    step2_p:        'Em vez do app, você vê uma tela de bloqueio: <em>"Ligue pra Mãe pra desbloquear."</em> Sem senha para contornar. Sem timer pra esperar. A única chave é uma conversa de verdade.',
-    step3_h:        'Você liga. Você conversa. Mínimo de 60 segundos.',
-    step3_p:        'O CallFirst usa o sistema de chamadas do seu celular pra confirmar que a ligação aconteceu e durou pelo menos um minuto. Sem gravação. Sem escuta. Só uma verificação de que você realmente conversou.',
-    step4_h:        'Seus apps desbloqueiam. Você rola sem culpa.',
-    step4_p:        'Os apps ficam liberados por 30, 60 ou 120 minutos — você escolhe. Quando o tempo acaba, o bloqueio volta. E em algum lugar, uma mãe está sorrindo.',
-    compare_label:  'Por que é diferente',
-    compare_title:  'Apps de força de vontade não funcionam.<br>Esse sim.',
+    label_whatsapp: 'WhatsApp <span style="font-weight:400;color:var(--muted)">(opcional)</span>',
+    placeholder_whatsapp: '+55 11 99999-9999',
+    btn_submit: 'Entrar na lista \u2192',
+    form_footer: 'Sem spam. Vamos te avisar pelo WhatsApp e e-mail quando o app estiver pronto. <a href="/privacy.html" style="color:var(--muted)">Pol\u00EDtica de privacidade</a>.',
+    success_title: 'Voc\u00EA est\u00E1 na lista!',
+    success_body: 'Te avisamos assim que o CallFirst lan\u00E7ar. Enquanto isso \u2014 que tal ligar pra sua m\u00E3e? \uD83D\uDE04',
+    how_label: 'Como funciona',
+    how_title: 'Simples, poderoso e imposs\u00EDvel de burlar.',
+    step1_h: 'Voc\u00EA abre o TikTok (ou o Instagram, ou o X\u2026)',
+    step1_p: 'O h\u00E1bito de sempre bate. Voc\u00EA pega o celular.',
+    step2_h: 'O CallFirst intercepta a abertura',
+    step2_p: 'Em vez do app, voc\u00EA v\u00EA uma tela de bloqueio: <em>"Ligue pra M\u00E3e pra desbloquear."</em> Sem senha para contornar. Sem timer pra esperar. A \u00FAnica chave \u00E9 uma conversa de verdade.',
+    step3_h: 'Voc\u00EA liga. Voc\u00EA conversa. M\u00EDnimo de 60 segundos.',
+    step3_p: 'O CallFirst usa o sistema de chamadas do seu celular pra confirmar que a liga\u00E7\u00E3o aconteceu e durou pelo menos um minuto. Sem grava\u00E7\u00E3o. Sem escuta. S\u00F3 uma verifica\u00E7\u00E3o de que voc\u00EA realmente conversou.',
+    step4_h: 'Seus apps desbloqueiam. Voc\u00EA rola sem culpa.',
+    step4_p: 'Os apps ficam liberados por 30, 60 ou 120 minutos \u2014 voc\u00EA escolhe. Quando o tempo acaba, o bloqueio volta. E em algum lugar, uma m\u00E3e est\u00E1 sorrindo.',
+    compare_label: 'Por que \u00E9 diferente',
+    compare_title: 'Apps de for\u00E7a de vontade n\u00E3o funcionam.<br>Esse sim.',
     compare_them_label: 'Todos os outros bloqueadores',
     them1: 'Define um timer. Ignora em 3 segundos.',
-    them2: 'Coloca uma senha. Você mesmo define a senha.',
-    them3: 'Relatórios de tempo de tela. Você ignora.',
-    them4: 'Depende 100% da sua força de vontade.',
-    them5: '78% dos usuários burlam em até 72 horas.',
-    us1: 'A única chave é uma ligação de verdade.',
-    us2: 'Cada desbloqueio cria um momento de conexão.',
-    us3: 'Sem brecha. Sem senha. Sem trapaça.',
-    us4: 'Acompanha sua sequência de ligações, não seus erros.',
-    us5: 'Alguém, em algum lugar, recebe mais ligações.',
-    cta_title:      'Pronto pra <span class="highlight">ligar pra sua mãe</span>?',
-    cta_desc:       'O CallFirst lança em Junho de 2026. Entre na lista — te avisamos quando estiver no ar.',
-    btn_cta:        'Entrar na lista',
-    cta_footer:     'Grátis pra entrar. Sem spam. Lança em 1 de Junho de 2026 no iOS e Android.',
-    footer_text:    '© 2026 CallFirst · <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> · Feito com amor (e culpa) em Londres',
+    them2: 'Coloca uma senha. Voc\u00EA mesmo define a senha.',
+    them3: 'Relat\u00F3rios de tempo de tela. Voc\u00EA ignora.',
+    them4: 'Depende 100% da sua for\u00E7a de vontade.',
+    them5: '78% dos usu\u00E1rios burlam em at\u00E9 72 horas.',
+    us1: 'A \u00FAnica chave \u00E9 uma liga\u00E7\u00E3o de verdade.',
+    us2: 'Cada desbloqueio cria um momento de conex\u00E3o.',
+    us3: 'Sem brecha. Sem senha. Sem trapa\u00E7a.',
+    us4: 'Acompanha sua sequ\u00EAncia de liga\u00E7\u00F5es, n\u00E3o seus erros.',
+    us5: 'Algu\u00E9m, em algum lugar, recebe mais liga\u00E7\u00F5es.',
+    cta_title: 'Pronto pra <span class="highlight">ligar pra sua m\u00E3e</span>?',
+    cta_desc: 'O CallFirst lan\u00E7a em Junho de 2026. Entre na lista \u2014 te avisamos quando estiver no ar.',
+    btn_cta: 'Entrar na lista',
+    cta_footer: 'Gr\u00E1tis pra entrar. Sem spam. Lan\u00E7a em 1 de Junho de 2026 no iOS e Android.',
+    footer_text: '\u00A9 2026 CallFirst &middot; <a href="mailto:callfirst@fribble.co.uk">callfirst@fribble.co.uk</a> &middot; Feito com amor (e culpa) em Londres'
   }
 };
 
-let currentLang = 'en';
+var currentLang = 'en';
 
 function setLang(lang) {
   currentLang = lang;
-  const t = translations[lang];
-  document.querySelectorAll('[data-i18n]').forEach(el => {
-    const key = el.getAttribute('data-i18n');
+  var t = translations[lang];
+  if (!t) return;
+  document.querySelectorAll('[data-i18n]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n');
     if (t[key] !== undefined) el.innerHTML = t[key];
   });
-  document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
-    const key = el.getAttribute('data-i18n-placeholder');
+  document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+    var key = el.getAttribute('data-i18n-placeholder');
     if (t[key] !== undefined) el.setAttribute('placeholder', t[key]);
   });
   document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en';
-  if (lang === 'pt') {
-    document.title = 'Call Mum First — Desbloqueie seus apps. Ligue pra quem você ama.';
-    document.querySelector('meta[name="description"]').content = 'A única forma de abrir o TikTok é ligar pra sua mãe. O CallFirst bloqueia as redes sociais até você ter uma ligação de verdade com quem importa.';
-  } else {
-    document.title = 'Call Mum First — Unlock your apps. Call someone you love.';
-    document.querySelector('meta[name="description"]').content = 'The only way to open TikTok is to call your mum. CallFirst blocks social media until you\'ve had a real phone call with someone who matters.';
-  }
   document.getElementById('btn-en').classList.toggle('active', lang === 'en');
   document.getElementById('btn-pt').classList.toggle('active', lang === 'pt');
-  const hiddenLang = document.getElementById('hidden-lang');
+  var hiddenLang = document.getElementById('hidden-lang');
   if (hiddenLang) hiddenLang.value = lang;
   try { localStorage.setItem('callfirst_lang', lang); } catch(e) {}
 }
 
-(function detectLanguage() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const urlLang = urlParams.get('lang');
-  if (urlLang === 'pt' || urlLang === 'en') {
-    setLang(urlLang);
-    try {
-      document.getElementById('hidden-utm-source').value = urlParams.get('utm_source') || '';
-      document.getElementById('hidden-utm-campaign').value = urlParams.get('utm_campaign') || '';
-    } catch(e) {}
-    return;
-  }
-  const browserLangs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
-  const isPT = browserLangs.some(l => l.toLowerCase().startsWith('pt'));
-  if (isPT) { setLang('pt'); return; }
-  let stored;
-  try { stored = localStorage.getItem('callfirst_lang'); } catch(e) {}
-  if (stored === 'pt' || stored === 'en') { setLang(stored); return; }
-  setLang('en');
+(function() {
   try {
-    const p = new URLSearchParams(window.location.search);
-    document.getElementById('hidden-utm-source').value = p.get('utm_source') || '';
-    document.getElementById('hidden-utm-campaign').value = p.get('utm_campaign') || '';
-  } catch(e) {}
+    var urlParams = new URLSearchParams(window.location.search);
+    var urlLang = urlParams.get('lang');
+    if (urlLang === 'pt' || urlLang === 'en') {
+      setLang(urlLang);
+      try {
+        document.getElementById('hidden-utm-source').value = urlParams.get('utm_source') || '';
+        document.getElementById('hidden-utm-campaign').value = urlParams.get('utm_campaign') || '';
+      } catch(e) {}
+      return;
+    }
+    var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage || ''];
+    var isPT = Array.prototype.some.call(browserLangs, function(l) { return l.toLowerCase().indexOf('pt') === 0; });
+    if (isPT) { setLang('pt'); return; }
+    var stored;
+    try { stored = localStorage.getItem('callfirst_lang'); } catch(e) {}
+    if (stored === 'pt' || stored === 'en') { setLang(stored); return; }
+    setLang('en');
+  } catch(e) {
+    setLang('en');
+  }
 })();
+
+document.getElementById('btn-en').addEventListener('click', function() { setLang('en'); });
+document.getElementById('btn-pt').addEventListener('click', function() { setLang('pt'); });
 
 function handleSubmit(e) {
   e.preventDefault();
-  const form = document.getElementById('waitlist-form');
-  const success = document.getElementById('success-msg');
-  const btn = form.querySelector('.btn-submit');
+  var form = document.getElementById('waitlist-form');
+  var success = document.getElementById('success-msg');
+  var btn = form.querySelector('.btn-submit');
   btn.disabled = true;
-  btn.textContent = currentLang === 'pt' ? '⏳ Enviando…' : '⏳ Sending…';
-  const data = Object.fromEntries(new FormData(form));
+  btn.textContent = currentLang === 'pt' ? '\u23F3 Enviando\u2026' : '\u23F3 Sending\u2026';
+  var data = {};
+  var formData = new FormData(form);
+  formData.forEach(function(v, k) { data[k] = v; });
+  data.lang = currentLang;
   fetch('https://formspree.io/f/mojparjb', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-    body: JSON.stringify({ ...data, lang: currentLang })
-  })
-  .then(res => {
+    body: JSON.stringify(data)
+  }).then(function(res) {
     if (res.ok) {
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({ event: 'waitlist_signup', lang: currentLang });
-      showSuccess(form, success);
+      form.style.display = 'none';
+      success.style.display = 'flex';
+      success.scrollIntoView({ behavior: 'smooth', block: 'center' });
     } else {
       btn.disabled = false;
       btn.textContent = translations[currentLang].btn_submit;
-      alert(currentLang === 'pt' ? 'Algo deu errado — tente novamente.' : 'Something went wrong — please try again.');
+      alert(currentLang === 'pt' ? 'Algo deu errado \u2014 tente novamente.' : 'Something went wrong \u2014 please try again.');
     }
-  })
-  .catch(() => {
+  }).catch(function() {
     btn.disabled = false;
     btn.textContent = translations[currentLang].btn_submit;
-    alert(currentLang === 'pt' ? 'Algo deu errado — tente novamente.' : 'Something went wrong — please try again.');
+    alert(currentLang === 'pt' ? 'Algo deu errado \u2014 tente novamente.' : 'Something went wrong \u2014 please try again.');
   });
 }
 
 function handleCTASubmit(e) {
   e.preventDefault();
-  const email = e.target.querySelector('input[type="email"]').value;
+  var email = e.target.querySelector('input[type="email"]').value;
   document.getElementById('signup').scrollIntoView({ behavior: 'smooth' });
-  setTimeout(() => {
-    const mainEmail = document.getElementById('email');
+  setTimeout(function() {
+    var mainEmail = document.getElementById('email');
     if (mainEmail) mainEmail.value = email;
   }, 600);
 }
 
-function showSuccess(form, success) {
-  form.style.display = 'none';
-  success.style.display = 'flex';
-  success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-
-document.querySelectorAll('a[href^="#"]').forEach(a => {
-  a.addEventListener('click', e => {
+document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+  a.addEventListener('click', function(e) {
     e.preventDefault();
-    const target = document.querySelector(a.getAttribute('href'));
+    var target = document.querySelector(a.getAttribute('href'));
     if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
 </script>
-
 </body>
 </html>
